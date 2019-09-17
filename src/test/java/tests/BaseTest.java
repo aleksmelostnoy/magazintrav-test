@@ -31,11 +31,6 @@ public class BaseTest extends AbstractTestNGCucumberTests {
 
     }
 
-    @Test
-    public void test() throws InterruptedException {
-        driver.get("https://magazintrav.ru");
 
-
-    }
 
 }
