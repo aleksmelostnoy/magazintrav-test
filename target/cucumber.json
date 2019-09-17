@@ -1,0 +1,131 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: ru"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Предыстория",
+        "steps": [
+          {
+            "result": {
+              "duration": 3423681300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "пользователь выбрал товар и находится на странице товара",
+            "match": {
+              "location": "CheckItemCard.пользователь_выбрал_товар_и_находится_на_странице_товара()"
+            },
+            "keyword": "Допустим "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3973937400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Товар корректно отобразился",
+        "description": "",
+        "id": "проверка-карточки-товара;товар-корректно-отобразился",
+        "after": [
+          {
+            "result": {
+              "duration": 700951200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 40530000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "присутствует заголовок товара",
+            "match": {
+              "location": "CheckItemCard.присутствует_заголовок_товара()"
+            },
+            "keyword": "Если "
+          },
+          {
+            "result": {
+              "duration": 46155200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "отображается изображение товара",
+            "match": {
+              "location": "CheckItemCard.отображается_изображение_товара()"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 28211500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "отбражается стоимость товара",
+            "match": {
+              "location": "CheckItemCard.отбражается_стоимость_товара()"
+            },
+            "keyword": "Также "
+          },
+          {
+            "result": {
+              "duration": 32548000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "есть кнопка добавить в корзину",
+            "match": {
+              "location": "CheckItemCard.есть_кнопка_добавить_в_корзину()"
+            },
+            "keyword": "Также "
+          },
+          {
+            "result": {
+              "duration": 526236000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "имеется возможность изменять количество товара",
+            "match": {
+              "location": "CheckItemCard.имеется_возможность_изменять_количество_товара()"
+            },
+            "keyword": "К тому же "
+          }
+        ]
+      }
+    ],
+    "name": "Проверка карточки товара",
+    "description": "",
+    "id": "проверка-карточки-товара",
+    "keyword": "Функция",
+    "uri": "CheckItemCard.feature"
+  }
+]
