@@ -33,8 +33,6 @@ public class Vacancy extends BasePage{
     @FindBy(xpath = "//button[@title='Отправить сообщение']")
     WebElement sendMessBtn;
 
-//    public Vacancy(){}
-
     WebDriver driver;
 
     public Vacancy(WebDriver driver) {
@@ -80,7 +78,7 @@ public class Vacancy extends BasePage{
         return this;
     }
     public Vacancy startChat(){
-        enterMessage.sendKeys("Дратуте!! Ваш сайт проходит проверку. Выявлена ошибка - при попытке установить аватар в ЛК, фотография не загружается! =)");
+        enterMessage.sendKeys("Сообщение =)");
         sendMessBtn.click();
         return this;
     }

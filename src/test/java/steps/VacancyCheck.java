@@ -19,7 +19,7 @@ public class VacancyCheck extends BaseTest {
 
         //Thread.sleep(1000);
 
-        vacancy =  new Vacancy(driver);
+        vacancy = new Vacancy(driver);
         vacancy.companyBtnClick();
     }
 
