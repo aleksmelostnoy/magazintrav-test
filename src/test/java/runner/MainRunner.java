@@ -6,9 +6,7 @@ import tests.BaseTest;
 @CucumberOptions(
         features = "src/test/java/features"
         ,glue={"steps"}
-        ,plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json"
-        //,"com.cucumber.listener.ExtentCucumberFormatter:target/extent-report/report.html"
-        }
+        ,plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json" }
         ,monochrome = false
 )
 

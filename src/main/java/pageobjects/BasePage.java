@@ -9,23 +9,21 @@ import org.openqa.selenium.support.ui.Select;
 
 public class BasePage {
 
-    protected WebDriver drvier;
-    public JavascriptExecutor jse;
-    public Select select;
-    public Actions action;
+    protected WebDriver driver ;
+    public JavascriptExecutor jse ;
+    public Select select ;
+    public Actions action ;
 
     public BasePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
-    }
-
-    public BasePage() {
+        this.driver = driver;
     }
 
     protected static void clickButton(WebElement button) {
         button.click();
     }
 
-    protected static void setTextElementText(WebElement textElement, String value) {
+    protected static void setTextElementText(WebElement textElement , String value) {
         textElement.sendKeys(value);
     }
 
