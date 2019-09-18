@@ -1,0 +1,230 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: ru"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Предыстория",
+        "steps": [
+          {
+            "result": {
+              "duration": 1973438600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "пользователь находится на главной странице https://magazintrav.ru",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://magazintrav.ru",
+                  "offset": 43
+                }
+              ],
+              "location": "SearchInputFieldSteps.пользователь_находится_на_главной_странице(String)"
+            },
+            "keyword": "Пусть "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4115079700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Поиск продукта \u0027Арония\u0027 через строку поиска",
+        "description": "",
+        "id": "проверка-работы-строки-поиска;поиск-продукта-\u0027арония\u0027-через-строку-поиска",
+        "after": [
+          {
+            "result": {
+              "duration": 859424000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 218779300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "пользователь вводит в строку поиска Арония",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Арония",
+                  "offset": 36
+                }
+              ],
+              "location": "SearchInputFieldSteps.пользователь_вводит_в_строку_поиска_Арония(String)"
+            },
+            "keyword": "Когда "
+          },
+          {
+            "result": {
+              "duration": 388743300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "продукт Арония отображается на экране",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Арония",
+                  "offset": 8
+                }
+              ],
+              "location": "SearchInputFieldSteps.продукт_Арония_отображается_на_экране(String)"
+            },
+            "keyword": "Тогда "
+          }
+        ]
+      }
+    ],
+    "name": "Проверка работы строки поиска",
+    "description": "",
+    "id": "проверка-работы-строки-поиска",
+    "keyword": "Функция",
+    "uri": "SearchInputField.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: ru"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Предыстория",
+        "steps": [
+          {
+            "result": {
+              "duration": 2172901700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "пользователь жмет на вклдаку \u0027О компании\u0027",
+            "match": {
+              "location": "VacancyCheck.пользователь_жмет_на_вклдаку_О_компании()"
+            },
+            "keyword": "Допустим "
+          },
+          {
+            "result": {
+              "duration": 728911100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "в появившемся списке выбирает \u0027Вакансии\u0027",
+            "match": {
+              "location": "VacancyCheck.в_появившемся_списке_выбирает_Вакансии()"
+            },
+            "keyword": "И "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3329961400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "В случае успеха",
+        "description": "",
+        "id": "проверка-вкладки-вакансии;в-случае-успеха",
+        "after": [
+          {
+            "result": {
+              "duration": 720210300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 125690700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "открывается страница Вакансий",
+            "match": {
+              "location": "VacancyCheck.открывается_страница_Вакансий()"
+            },
+            "keyword": "Тогда "
+          },
+          {
+            "result": {
+              "duration": 31702500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "можно проверить список",
+            "match": {
+              "location": "VacancyCheck.можно_проверить_список()"
+            },
+            "keyword": "И "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@correct"
+          }
+        ]
+      }
+    ],
+    "name": "Проверка вкладки Вакансии",
+    "description": "Когда пользователь жмет на вкладку \u0027О компании\u0027\r\nИ мжет на кнопку \u0027Вакансии\u0027\r\nОткрывается страница вакансий в случае успеха",
+    "id": "проверка-вкладки-вакансии",
+    "keyword": "Функция",
+    "uri": "UserRegistration.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@all"
+      }
+    ]
+  }
+]
