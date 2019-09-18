@@ -3,18 +3,18 @@ package pageobjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+
 import java.util.List;
 
-public class MainPage extends BasePage {
-
-
+public class MainPage extends BasePage{
 
     public MainPage(WebDriver driver) {
         super(driver);
     }
-
+    
     @FindBy(xpath = "//*[@href=\"/vyiskazat_blagodarnost\"]/*[@alt=\"Высказать Благодарность\"]")
-    WebElement thankButton;
+    WebElement thankButton;   
 
     @FindBy(xpath = "//input[@type='search']")
     private WebElement searchLabel;
@@ -25,14 +25,11 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//div[contains(@class, 'multi-content')]/span")
     private List<WebElement> multiContent;
 
-
-
-
     public ThankPage openThankPage() {
         thankButton.click();
         return new ThankPage(driver);
     }
-
+        
     public void typeWordForSearch(String word) {
         searchLabel.click();
         bigSearchInputField.sendKeys(word);
