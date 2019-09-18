@@ -13,7 +13,7 @@ formatter.feature({
   "keyword": "Функция"
 });
 formatter.before({
-  "duration": 3973937400,
+  "duration": 4109434000,
   "status": "passed"
 });
 formatter.background({
@@ -32,7 +32,7 @@ formatter.match({
   "location": "CheckItemCard.пользователь_выбрал_товар_и_находится_на_странице_товара()"
 });
 formatter.result({
-  "duration": 3423681300,
+  "duration": 3146936400,
   "status": "passed"
 });
 formatter.scenario({
@@ -72,39 +72,39 @@ formatter.match({
   "location": "CheckItemCard.присутствует_заголовок_товара()"
 });
 formatter.result({
-  "duration": 40530000,
+  "duration": 44428200,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckItemCard.отображается_изображение_товара()"
 });
 formatter.result({
-  "duration": 46155200,
+  "duration": 48133200,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckItemCard.отбражается_стоимость_товара()"
 });
 formatter.result({
-  "duration": 28211500,
+  "duration": 26921000,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckItemCard.есть_кнопка_добавить_в_корзину()"
 });
 formatter.result({
-  "duration": 32548000,
+  "duration": 36034100,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckItemCard.имеется_возможность_изменять_количество_товара()"
 });
 formatter.result({
-  "duration": 526236000,
+  "duration": 501328000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 700951200,
+  "duration": 702189600,
   "status": "passed"
 });
 });
