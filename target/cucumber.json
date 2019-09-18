@@ -17,7 +17,166 @@
         "steps": [
           {
             "result": {
-              "duration": 1973438600,
+              "duration": 2828300300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "пользователь заходит на главную страницу https://magazintrav.ru",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://magazintrav.ru",
+                  "offset": 41
+                }
+              ],
+              "location": "PaymentFormWorkSteps.пользователь_заходит_на_главную_страницу_сайта(String)"
+            },
+            "keyword": "Допустим "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4110925100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "позитивная проверка работа формы \u0027оплата заказа онлайн\u0027",
+        "description": "",
+        "id": "работа-формы-\"оплата-заказа-онлайн\";позитивная-проверка-работа-формы-\u0027оплата-заказа-онлайн\u0027",
+        "after": [
+          {
+            "result": {
+              "duration": 734407800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 94658400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "пользователь нажимает на кнопку \u0027оплата заказа онлайн\u0027",
+            "match": {
+              "location": "PaymentFormWorkSteps.пользователь_нажимает_на_кнопку_оплата_заказа_онлайн()"
+            },
+            "keyword": "Когда "
+          },
+          {
+            "result": {
+              "duration": 658359500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "всплывает окно \u0027Оплата заказа онлайн\u0027",
+            "match": {
+              "location": "PaymentFormWorkSteps.всплывает_окно_Оплата_заказа_онлайн()"
+            },
+            "keyword": "Тогда "
+          },
+          {
+            "result": {
+              "duration": 207034700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "пользователь заполняет все поля ввода",
+            "match": {
+              "location": "PaymentFormWorkSteps.пользователь_заполняет_все_поля_ввода()"
+            },
+            "keyword": "Когда "
+          },
+          {
+            "result": {
+              "duration": 63370900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "нажимает кнопку чтобы закрыть форму",
+            "match": {
+              "location": "PaymentFormWorkSteps.нажимает_кнопку_чтобы_закрыть_форму()"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 595328400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "вновь открывается главная страница",
+            "match": {
+              "location": "PaymentFormWorkSteps.вновь_открывается_главная_страница()"
+            },
+            "keyword": "Тогда "
+          },
+          {
+            "result": {
+              "duration": 54273900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "пользователь вновь нажимает на кнопку \u0027оплата заказа онлайн\u0027",
+            "match": {
+              "location": "PaymentFormWorkSteps.пользователь_вновь_нажимает_на_кнопку_оплата_заказа_онлайн()"
+            },
+            "keyword": "Когда "
+          },
+          {
+            "result": {
+              "duration": 44739900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "вновь всплывает окно \u0027Оплата заказа онлайн\u0027 и все введенные до этого данные корректны",
+            "match": {
+              "location": "PaymentFormWorkSteps.вновь_всплывает_окно_Оплата_заказа_онлайн_и_все_введенные_до_этого_данные_корректны()"
+            },
+            "keyword": "Тогда "
+          }
+        ]
+      }
+    ],
+    "name": "Работа формы \"оплата заказа онлайн\"",
+    "description": "",
+    "id": "работа-формы-\"оплата-заказа-онлайн\"",
+    "keyword": "Функция",
+    "uri": "PaymentFormWork.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: ru"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Предыстория",
+        "steps": [
+          {
+            "result": {
+              "duration": 1810696100,
               "status": "passed"
             },
             "line": 6,
@@ -39,7 +198,7 @@
         "before": [
           {
             "result": {
-              "duration": 4115079700,
+              "duration": 3291341600,
               "status": "passed"
             },
             "match": {
@@ -54,7 +213,7 @@
         "after": [
           {
             "result": {
-              "duration": 859424000,
+              "duration": 716080200,
               "status": "passed"
             },
             "match": {
@@ -67,7 +226,7 @@
         "steps": [
           {
             "result": {
-              "duration": 218779300,
+              "duration": 229830900,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +244,7 @@
           },
           {
             "result": {
-              "duration": 388743300,
+              "duration": 397846600,
               "status": "passed"
             },
             "line": 10,
@@ -117,6 +276,135 @@
         "value": "# language: ru"
       }
     ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Предыстория",
+        "steps": [
+          {
+            "result": {
+              "duration": 1770583600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "пользователь находится на главной странице",
+            "match": {
+              "location": "StepsLeaveComplaint.пользователь_находится_на_главной_странице()"
+            },
+            "keyword": "Допустим "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3273771200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "позитивная отправка жалобы руководству",
+        "description": "",
+        "id": "отправка-жалобы-руководству;позитивная-отправка-жалобы-руководству",
+        "after": [
+          {
+            "result": {
+              "duration": 738026400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "duration": 108037000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "нажимает на кнопку Помощь",
+            "match": {
+              "location": "StepsLeaveComplaint.нажимает_на_кнопку_Помощь()"
+            },
+            "keyword": "Когда "
+          },
+          {
+            "result": {
+              "duration": 737537900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "выбирает пункт службы контроля качества",
+            "match": {
+              "location": "StepsLeaveComplaint.выбирает_пункт_службы_контроля_качества()"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 1457608800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "пользователь нажимает на кнопку оставить жалобу",
+            "match": {
+              "location": "StepsLeaveComplaint.пользователь_нажимает_на_кнопку_оставить_жалобу()"
+            },
+            "keyword": "Тогда "
+          },
+          {
+            "result": {
+              "duration": 829052400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "заполняет все поля",
+            "match": {
+              "location": "StepsLeaveComplaint.заполняет_все_поля()"
+            },
+            "keyword": "И "
+          },
+          {
+            "result": {
+              "duration": 93591500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "пользователь нажимает кнопку отправить",
+            "match": {
+              "location": "StepsLeaveComplaint.пользователь_нажимает_кнопку_отправить()"
+            },
+            "keyword": "Тогда "
+          }
+        ]
+      }
+    ],
+    "name": "Отправка жалобы руководству",
+    "description": "",
+    "id": "отправка-жалобы-руководству",
+    "keyword": "Функция",
+    "uri": "UserRegistration.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: ru"
+      }
+    ],
     "line": 4,
     "elements": [
       {
@@ -128,7 +416,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2172901700,
+              "duration": 1754769600,
               "status": "passed"
             },
             "line": 10,
@@ -140,7 +428,7 @@
           },
           {
             "result": {
-              "duration": 728911100,
+              "duration": 1079751900,
               "status": "passed"
             },
             "line": 11,
@@ -156,7 +444,7 @@
         "before": [
           {
             "result": {
-              "duration": 3329961400,
+              "duration": 3253301900,
               "status": "passed"
             },
             "match": {
@@ -164,14 +452,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 14,
         "name": "В случае успеха",
         "description": "",
         "id": "проверка-вкладки-вакансии;в-случае-успеха",
         "after": [
           {
             "result": {
-              "duration": 720210300,
+              "duration": 715954700,
               "status": "passed"
             },
             "match": {
@@ -184,10 +472,10 @@
         "steps": [
           {
             "result": {
-              "duration": 125690700,
+              "duration": 124916800,
               "status": "passed"
             },
-            "line": 16,
+            "line": 15,
             "name": "открывается страница Вакансий",
             "match": {
               "location": "VacancyCheck.открывается_страница_Вакансий()"
@@ -196,10 +484,10 @@
           },
           {
             "result": {
-              "duration": 31702500,
+              "duration": 26808600,
               "status": "passed"
             },
-            "line": 17,
+            "line": 16,
             "name": "можно проверить список",
             "match": {
               "location": "VacancyCheck.можно_проверить_список()"
@@ -209,7 +497,7 @@
         ],
         "tags": [
           {
-            "line": 14,
+            "line": 13,
             "name": "@correct"
           }
         ]
@@ -219,7 +507,7 @@
     "description": "Когда пользователь жмет на вкладку \u0027О компании\u0027\r\nИ мжет на кнопку \u0027Вакансии\u0027\r\nОткрывается страница вакансий в случае успеха",
     "id": "проверка-вкладки-вакансии",
     "keyword": "Функция",
-    "uri": "UserRegistration.feature",
+    "uri": "UserRegistrationV.feature",
     "tags": [
       {
         "line": 3,

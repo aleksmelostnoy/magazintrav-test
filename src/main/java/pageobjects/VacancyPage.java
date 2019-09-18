@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 public class VacancyPage extends BasePage {
 
+
     @FindBy(xpath = "//*[text()='О компании']")
     WebElement companyButton;
 
