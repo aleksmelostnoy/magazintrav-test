@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class BasePage {
 
-    protected WebDriver drvier ;
+    protected WebDriver driver;
     public JavascriptExecutor jse ;
     public Select select ;
     public Actions action ;
@@ -17,6 +17,7 @@ public class BasePage {
     public BasePage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
+        this.driver = driver;
     }
 
     protected static void clickButton(WebElement button)
