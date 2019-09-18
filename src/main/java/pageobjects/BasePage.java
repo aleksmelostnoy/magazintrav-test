@@ -9,9 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class BasePage {
 
-
     protected WebDriver driver;
-
     public JavascriptExecutor jse ;
     public Select select ;
     public Actions action ;
@@ -36,5 +34,4 @@ public class BasePage {
     public void clearText(WebElement element) {
         element.clear();
     }
-
 }

@@ -22,6 +22,4 @@ public class BaseTest extends AbstractTestNGCucumberTests {
     public static void quitDriver() {
         driver.quit();
     }
-
-
 }

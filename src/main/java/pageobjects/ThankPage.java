@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ThankPage extends BasePage {
 
-
     @FindBy(xpath = "//*[@id=\"complaint_select\"]/option[2]")
     WebElement complaintSelector;
 
@@ -29,7 +28,6 @@ public class ThankPage extends BasePage {
 
     public ThankPage(WebDriver driver) {
         super(driver);
-
     }
 
     public ThankPage selectComplaint() {

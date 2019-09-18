@@ -9,7 +9,6 @@ import tests.BaseTest;
         ,glue={"steps"}
         ,plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json" }
         ,monochrome = false
-
 )
 
 public class MainRunner extends BaseTest {
