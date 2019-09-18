@@ -4,10 +4,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import pageobjects.BasePage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,15 +18,5 @@ public class BaseTest extends AbstractTestNGCucumberTests {
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         return driver;
     }
-
-    @AfterMethod
-    public void teardown() {
-        if (driver != null) {
-            driver.quit();
-        }
-
-    }
-
-
 
 }
