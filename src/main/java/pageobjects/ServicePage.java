@@ -12,7 +12,6 @@ public class ServicePage extends BasePage {
 
     public ServicePage(WebDriver driver) {
         super(driver);
-        this.driver = driver;
     }
 
     public ComplaintPage clickComplaintBtn() {
